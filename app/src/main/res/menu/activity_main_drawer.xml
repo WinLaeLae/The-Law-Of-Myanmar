@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_law"
+
+            android:icon="@drawable/ic_law"
+            android:title="@string/laws" />
+       
+        <item
+            android:id="@+id/nav_rule"
+            android:icon="@drawable/ic_method"
+            android:title="@string/rule" />
+        <item
+            android:id="@+id/nav_draft"
+            android:icon="@drawable/ic_content"
+            android:title="@string/draft" />
+        <item
+            android:id="@+id/nav_region"
+            android:icon="@drawable/ic_region"
+            android:title="@string/region" />
+        <item
+            android:id="@+id/nav_supreme_court"
+            android:icon="@drawable/ic_supreme_court"
+            android:title="@string/supreme_court" />
+        <item
+            android:id="@+id/nav_township_court"
+            android:icon="@drawable/ic_office"
+            android:title="@string/tsp_court" />
+        <item
+            android:id="@+id/nav_lawyer"
+            android:icon="@drawable/ic_lawyer"
+            android:title="@string/lawyer" />
+        <item
+            android:id="@+id/nav_gov"
+            android:icon="@drawable/ic_government"
+            android:title="@string/gov" />
+        <item
+            android:id="@+id/nav_save_note"
+            android:icon="@drawable/ic_save"
+            android:title="@string/note" />
+    </group>
+</menu>

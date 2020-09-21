@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TheLawOfMyanmar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--    <string name="menu_home">Home</string>-->
+    <!--    <string name="menu_gallery">Gallery</string>-->
+    <!--    <string name="menu_slideshow">Slideshow</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address">101_maha_bandoola_garden_st_lower_middle_block_kyauktada_yangon_myanmar</string>
+    <string name="phone">01_379625_01_382027</string>
+    <string name="title_about">About</string>
+    <string name="detail_txt">
+        ကလေးသူငယ် အခွင့်အရေးများဆိုင်ရာဥပဒေ
+        (၂၀၁၉ ခုနှစ်၊ ပြည်ထောင်စုလွှတ်တော်ဥပဒေအမှတ် ၂၂။)
+        ၁၃၈၁ ခုနှစ်၊ ဝါဆိုလပြည့်ကျော် ၇ ရက် (၂၀၁၉ ခုနှစ်၊ ဇူလိုင်လ ၂၃ ရက်)
+        ပြည်ထောင်စုလွှတ်တော်သည် ဤဥပဒေကို ပြဋ္ဌာန်းလိုက်သည်။
+        အခန်း (၁) အမည်၊ စီရင်ပိုင်ခွင့်နှင့် အဓိပ္ပာယ်ဖော်ပြချက်
+        ၁။ ဤဥပဒေကို ကလေးသူငယ် အခွင့်အရေးများဆိုင်ရာဥပဒေဟု ခေါ်တွင်စေရမည်။
+        ၂။ ကလေးသူငယ်ကို ရောင်းချခြင်း၊ ပြည့်တန်ဆာပြုလုပ်ခိုင်းစေခြင်း သို့မဟုတ် ကလေးသူငယ် ညစ်ညမ်းပုံ ပြုလုပ်ဖြန့်ဖြူးခြင်းဆိုင်ရာပြစ်မှုတစ်ခုခုသည် အောက်ဖော်ပြပါအချက်များနှင့် ကိုက်ညီလျှင် ဤဥပဒေဖြင့်သာ စီရင်ပိုင်ခွင့်ရှိစေရမည်- (က) နိုင်ငံတော်အတွင်း မည်သူမဆို ကျူးလွန်ခြင်း၊ (ခ) နိုင်ငံသားကဖြစ်စေ၊ နိုင်ငံတော်တွင် အမြဲတမ်းနေထိုင်ပြီး နိုင်ငံခြားသား မှတ်ပုံတင်လက်မှတ် ကိုင်ဆောင်ထားသူကဖြစ်စေ၊ မြန်မာနိုင်ငံတွင် အမြဲတမ်းနေထိုင်ခွင့်ရရှိသည့် နိုင်ငံခြားသားကဖြစ်စေ ကလေးသူငယ်တစ်ဦးဦးအပေါ် ပြည်ပတွင် ကျူးလွန်ခြင်း၊ (ဂ) နိုင်ငံတော်၏ တည်ဆဲဥပဒေတစ်ရပ်ရပ်အရ မှတ်ပုံတင်ပြီး နိုင်ငံတော်အလံလွှင့်ထူခွင့်ရှိသော ရေယာဉ် သို့မဟုတ် လေယာဉ်ပေါ်တွင် ကျူးလွန်ခြင်း၊ (ဃ) ဤဥပဒေ အခန်း (၁၈) ပါ ပြစ်မှုကျူးလွန်သည်ဟု စွပ်စွဲခြင်းခံရသူအား ပြည်ပနိုင်ငံတစ်ခုခုသို့ လွှဲပြောင်းပေးပို့ခြင်းမပြုသည့်ကိစ္စ၌ ထိုသူက နိုင်ငံတော်အတွင်းရှိနေခြင်း။ ၃။ ဤဥပဒေတွင်ပါရှိသော အောက်ပါစကားရပ်များသည် ဖော်ပြပါအတိုင်း အဓိပ္ပာယ်သက်ရောက်စေ ရမည်- (က) နိုင်ငံတော် ဆိုသည်မှာ ပြည်ထောင်စုသမ္မတမြန်မာနိုင်ငံတော်ကို ဆိုသည်။ (ခ) ကလေးသူငယ် ဆိုသည်မှာ အသက် ၁၈ နှစ် မပြည့်သေးသောသူကို ဆိုသည်။</string>
+    <string name="laws">ဥပဒေများ</string>
+    <string name="rule">နည်းဥပဒေများ</string>
+    <string name="draft">ဥပဒေမူကြမ်းများ</string>
+    <string name="region">တိုင်းဒေသကြီး/ပြည်နယ် ဥပဒေများ</string>
+    <string name="supreme_court">ပြည်ထောင်စု တရားလွှတ်တော်ချုပ်</string>
+    <string name="tsp_court">မြို့နယ်တရားရုံးများ</string>
+    <string name="lawyer">ရှေ့နေများ</string>
+    <string name="gov">ပြည်ထောင်စုဝန်ကြီးဌာနများ</string>
+    <string name="note">မှတ်စု စာရင်း</string>
+    <string name="lawNametitle">ကလေးသူငယ် အခွင့်အရေးများဆိုင်ရာ ဥပဒေ</string>
+</resources>

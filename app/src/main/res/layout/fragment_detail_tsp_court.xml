@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.supremeCourt.DetailTspCourtFragment">
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toTopOf="@id/constOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/constOne"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mapView">
+
+        <TextView
+            android:id="@+id/tsp_courtName_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="55dp"
+            android:fontFamily="@font/eb_garamond_bold"
+            android:text="Yangon Region High Court"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/lawstitle_forntsize" />
+
+        <LinearLayout
+            android:id="@+id/liner_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="2.5"
+                android:paddingLeft="17dp"
+                android:src="@drawable/ic_map" />
+
+            <TextView
+                android:id="@+id/tsp_address_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:minLines="2"
+                android:fontFamily="@font/eb_garamond_regular"
+                android:paddingLeft="5dp"
+                android:text="@string/address"
+                android:textColor="@color/text_color"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="2.5"
+                android:paddingLeft="17dp"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                android:id="@+id/phone_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:minLines="2"
+                android:fontFamily="@font/eb_garamond_regular"
+                android:paddingLeft="5dp"
+                android:text="@string/phone"
+                android:textColor="@color/text_color"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFCC18</color>
+    <color name="colorPrimaryDark">#CAA759</color>
+    <color name="colorAccent">#FBFBFB</color>
+    <color name="item_bg">#FFEFB7</color>
+    <color name="categories_bg">#FFE382</color>
+    <color name="court_list_bg">#EFEEEE</color>
+    <color name="text_color">#000000</color>
+    <color name="chatpter_item">#ffffff</color>
+
+</resources>

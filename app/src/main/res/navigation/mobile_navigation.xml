@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_laws">
+
+    <fragment
+        android:id="@+id/nav_laws"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.Laws.LawsFragment"
+        android:label="@string/laws"
+        tools:layout="@layout/fragment_laws" >
+        <action
+            android:id="@+id/action_nav_laws_to_lawsListFragment"
+            app:destination="@id/lawsListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_rules"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.rules.RulesFragment"
+        android:label="@string/rule"
+        tools:layout="@layout/fragment_rule" >
+        <action
+            android:id="@+id/action_nav_rules_to_lawsListFragment"
+            app:destination="@id/lawsListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_drafts"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.draft.DraftFragment"
+        android:label="@string/draft"
+        tools:layout="@layout/fragment_draft" >
+        <action
+            android:id="@+id/action_nav_drafts_to_lawsListFragment"
+            app:destination="@id/lawsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regionLawsFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.region.RegionLawsFragment"
+        android:label="@string/region"
+        tools:layout="@layout/fragment_region_laws" >
+        <action
+            android:id="@+id/action_regionLawsFragment_to_lawsListFragment"
+            app:destination="@id/lawsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/supremeCourtFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.supremeCourt.SupremeCourtFragment"
+        android:label="@string/supreme_court"
+        tools:layout="@layout/fragment_supreme_court" />
+    <fragment
+        android:id="@+id/townshipCourtOfficeFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.townshipCourt.TownshipCourtOfficeFragment"
+        android:label="@string/tsp_court"
+        tools:layout="@layout/fragment_township_court_office" >
+        <action
+            android:id="@+id/action_townshipCourtOfficeFragment_to_detailTspCourtFragment"
+            app:destination="@id/detailTspCourtFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lawyerListFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.lawyer.LawyerListFragment"
+        android:label="@string/lawyer"
+        tools:layout="@layout/fragment_lawyerlist" />
+    <fragment
+        android:id="@+id/govWebListFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.GovWebList.GovWebListFragment"
+        android:label="@string/gov"
+        tools:layout="@layout/fragment_gov_web_list" >
+        <action
+            android:id="@+id/action_govWebListFragment_to_detailGovWebFragment2"
+            app:destination="@id/detailGovWebFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.note.NoteListFragment"
+        android:label="@string/note"
+        tools:layout="@layout/fragment_note_list" />
+    <fragment
+        android:id="@+id/lawsListFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.lawsList.LawsListFragment"
+        android:label="@string/laws"
+        tools:layout="@layout/fragment_laws_list" >
+        <action
+            android:id="@+id/action_lawsListFragment_to_lawChapterListFragment"
+            app:destination="@id/lawChapterListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailGovWebFragment2"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.GovWebList.DetailGovWebFragment"
+        android:label="@string/gov"
+        tools:layout="@layout/fragment_detail_gov_web" />
+    <fragment
+        android:id="@+id/detailLawFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.detailLaw.DetailLawFragment"
+        android:label="@string/lawNametitle"
+        tools:layout="@layout/fragment_detail_law" />
+    <fragment
+        android:id="@+id/lawChapterListFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.detailLaw.LawChapterListFragment"
+        android:label="@string/lawNametitle"
+        tools:layout="@layout/fragment_law_chapter_list" >
+        <action
+            android:id="@+id/action_lawChapterListFragment_to_detailLawFragment"
+            app:destination="@id/detailLawFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTspCourtFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.supremeCourt.DetailTspCourtFragment"
+        android:label="fragment_detail_tsp_court"
+        tools:layout="@layout/fragment_detail_tsp_court" />
+</navigation>
