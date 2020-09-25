@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.supremeCourt.DetailTspCourtFragment">
+    tools:context=".ui.townshipCourt.DetailTspCourtFragment">
 
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="450dp"
         app:layout_constraintBottom_toTopOf="@id/constOne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
@@ -24,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:paddingTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -63,7 +64,7 @@
                 android:paddingLeft="5dp"
                 android:text="@string/address"
                 android:textColor="@color/text_color"
-                android:textSize="11sp" />
+                android:textSize="@dimen/normal_forntsize" />
         </LinearLayout>
 
         <LinearLayout
@@ -91,7 +92,7 @@
                 android:paddingLeft="5dp"
                 android:text="@string/phone"
                 android:textColor="@color/text_color"
-                android:textSize="11sp" />
+                android:textSize="@dimen/normal_forntsize" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

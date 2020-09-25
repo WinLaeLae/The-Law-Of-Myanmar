@@ -7,7 +7,7 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="list_margin_TB">8dp</dimen>
     <dimen name="list_margin_LR">15dp</dimen>
-    <dimen name="lawstitle_forntsize">14sp</dimen>
-    <dimen name="normal_forntsize">10sp</dimen>
+    <dimen name="lawstitle_forntsize">16sp</dimen>
+    <dimen name="normal_forntsize">14sp</dimen>
 
 </resources>

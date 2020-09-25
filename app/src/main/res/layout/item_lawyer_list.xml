@@ -1,134 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp"
-    android:background="@color/court_list_bg">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="5dp">
 
-    <LinearLayout
-        android:id="@+id/liner_lawyerName"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="5"
-        app:layout_constraintBottom_toTopOf="@id/liner_address"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:layout_weight="2"
-            android:src="@drawable/ic_lawyer" />
-
-        <TextView
-
-            android:id="@+id/lawyerName_txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:fontFamily="@font/pyidaungsu_book_regular"
-            android:minLines="2"
-            android:text="ေဒၚခင္သူဇာေထြး (LL.B)"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/lawstitle_forntsize" />
-
+        android:layout_height="130dp">
         <LinearLayout
+            android:id="@+id/liner_lawyerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="4"
+            app:layout_constraintBottom_toTopOf="@id/liner_address"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread">
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="2"-->
+<!--                android:src="@drawable/ic_lawyer" />-->
 
             <TextView
-                android:id="@+id/lawyerPosition_txt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/pyidaungsu_book_regular"
-                android:gravity="center"
-                android:text="တရားလႊတ္ေတာ္ေရွ႕ေန"
-                android:textColor="@color/text_color"
-                android:textSize="11sp" />
 
-            <TextView
-                android:id="@+id/lawyerNo._txt"
+                android:id="@+id/lawyerName_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:fontFamily="@font/pyidaungsu_book_regular"
-                android:gravity="center"
-                android:text="(စဥ္-၁၃၂၉၂)"
+                android:minLines="2"
+                android:paddingLeft="30dp"
+                android:text="ေဒၚခင္သူဇာေထြး (LL.B)"
                 android:textColor="@color/text_color"
-                android:textSize="11sp" />
+                android:textSize="@dimen/lawstitle_forntsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lawyerPosition_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pyidaungsu_book_regular"
+                    android:gravity="center"
+                    android:text="တရားလႊတ္ေတာ္ေရွ႕ေန"
+                    android:textColor="@color/text_color"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/lawyerNo._txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pyidaungsu_book_regular"
+                    android:gravity="center"
+                    android:text="(စဥ္-၁၃၂၉၂)"
+                    android:textColor="@color/text_color"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/liner_address"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        app:layout_constraintBottom_toTopOf="@id/liner_phone"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/liner_lawyerName">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:layout_weight="2.5"
-            android:paddingLeft="17dp"
-            android:src="@drawable/ic_map" />
-
-        <TextView
-            android:id="@+id/lawyer_address_txt"
+        <LinearLayout
+            android:id="@+id/liner_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:fontFamily="@font/pyidaungsu_book_regular"
-            android:minLines="2"
-            android:paddingLeft="5dp"
-            android:text="@string/address"
-            android:textColor="@color/text_color"
-            android:textSize="11sp" />
-    </LinearLayout>
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toTopOf="@id/liner_phone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/liner_lawyerName">
 
-    <LinearLayout
-        android:id="@+id/liner_phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/liner_address">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="2.5"
+                android:paddingLeft="17dp"
+                android:src="@drawable/ic_map" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:layout_weight="2.5"
-            android:paddingLeft="17dp"
-            android:src="@drawable/ic_phone" />
+            <TextView
+                android:id="@+id/lawyer_address_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/pyidaungsu_book_regular"
+                android:minLines="2"
+                android:paddingLeft="5dp"
+                android:text="@string/address"
+                android:textColor="@color/text_color"
+                android:textSize="11sp" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/lawyer_phNo-txt"
+        <LinearLayout
+            android:id="@+id/liner_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="center_vertical"
-            android:minLines="2"
-            android:paddingLeft="5dp"
-            android:fontFamily="@font/pyidaungsu_book_regular"
-            android:text="@string/phone"
-            android:textColor="@color/text_color"
-            android:textSize="11sp" />
-    </LinearLayout>
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/liner_address">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="2.5"
+                android:paddingLeft="17dp"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                android:id="@+id/lawyer_phNo-txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/pyidaungsu_book_regular"
+                android:gravity="center_vertical"
+                android:minLines="2"
+                android:paddingLeft="5dp"
+                android:text="@string/phone"
+                android:textColor="@color/text_color"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

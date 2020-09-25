@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_laws">
+    app:startDestination="@+id/nav_law">
 
     <fragment
-        android:id="@+id/nav_laws"
+        android:id="@+id/nav_law"
         android:name="mm.com.fairway.thelawofmyanmar.ui.Laws.LawsFragment"
         android:label="@string/laws"
         tools:layout="@layout/fragment_laws" >
@@ -16,7 +16,7 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_rules"
+        android:id="@+id/nav_rule"
         android:name="mm.com.fairway.thelawofmyanmar.ui.rules.RulesFragment"
         android:label="@string/rule"
         tools:layout="@layout/fragment_rule" >
@@ -26,7 +26,7 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_drafts"
+        android:id="@+id/nav_draft"
         android:name="mm.com.fairway.thelawofmyanmar.ui.draft.DraftFragment"
         android:label="@string/draft"
         tools:layout="@layout/fragment_draft" >
@@ -35,7 +35,7 @@
             app:destination="@id/lawsListFragment" />
     </fragment>
     <fragment
-        android:id="@+id/regionLawsFragment"
+        android:id="@+id/nav_region"
         android:name="mm.com.fairway.thelawofmyanmar.ui.region.RegionLawsFragment"
         android:label="@string/region"
         tools:layout="@layout/fragment_region_laws" >
@@ -44,26 +44,26 @@
             app:destination="@id/lawsListFragment" />
     </fragment>
     <fragment
-        android:id="@+id/supremeCourtFragment"
+        android:id="@+id/nav_supreme_court"
         android:name="mm.com.fairway.thelawofmyanmar.ui.supremeCourt.SupremeCourtFragment"
         android:label="@string/supreme_court"
         tools:layout="@layout/fragment_supreme_court" />
     <fragment
-        android:id="@+id/townshipCourtOfficeFragment"
+        android:id="@+id/nav_township_court"
         android:name="mm.com.fairway.thelawofmyanmar.ui.townshipCourt.TownshipCourtOfficeFragment"
         android:label="@string/tsp_court"
         tools:layout="@layout/fragment_township_court_office" >
         <action
-            android:id="@+id/action_townshipCourtOfficeFragment_to_detailTspCourtFragment"
+            android:id="@+id/action_nav_township_court_to_detailTspCourtFragment"
             app:destination="@id/detailTspCourtFragment" />
     </fragment>
     <fragment
-        android:id="@+id/lawyerListFragment"
+        android:id="@+id/nav_lawyer"
         android:name="mm.com.fairway.thelawofmyanmar.ui.lawyer.LawyerListFragment"
         android:label="@string/lawyer"
         tools:layout="@layout/fragment_lawyerlist" />
     <fragment
-        android:id="@+id/govWebListFragment"
+        android:id="@+id/nav_gov"
         android:name="mm.com.fairway.thelawofmyanmar.ui.GovWebList.GovWebListFragment"
         android:label="@string/gov"
         tools:layout="@layout/fragment_gov_web_list" >
@@ -72,7 +72,7 @@
             app:destination="@id/detailGovWebFragment2" />
     </fragment>
     <fragment
-        android:id="@+id/noteListFragment"
+        android:id="@+id/nav_save_note"
         android:name="mm.com.fairway.thelawofmyanmar.ui.note.NoteListFragment"
         android:label="@string/note"
         tools:layout="@layout/fragment_note_list" />
@@ -89,7 +89,11 @@
         android:id="@+id/detailGovWebFragment2"
         android:name="mm.com.fairway.thelawofmyanmar.ui.GovWebList.DetailGovWebFragment"
         android:label="@string/gov"
-        tools:layout="@layout/fragment_detail_gov_web" />
+        tools:layout="@layout/fragment_detail_gov_web" >
+        <argument
+            android:name="govlink"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/detailLawFragment"
         android:name="mm.com.fairway.thelawofmyanmar.ui.detailLaw.DetailLawFragment"
@@ -106,7 +110,11 @@
     </fragment>
     <fragment
         android:id="@+id/detailTspCourtFragment"
-        android:name="mm.com.fairway.thelawofmyanmar.ui.supremeCourt.DetailTspCourtFragment"
+        android:name="mm.com.fairway.thelawofmyanmar.ui.townshipCourt.DetailTspCourtFragment"
         android:label="fragment_detail_tsp_court"
-        tools:layout="@layout/fragment_detail_tsp_court" />
+        tools:layout="@layout/fragment_detail_tsp_court" >
+        <argument
+            android:name="courtID"
+            app:argType="integer" />
+    </fragment>
 </navigation>

@@ -33,4 +33,5 @@
     <string name="gov">ပြည်ထောင်စုဝန်ကြီးဌာနများ</string>
     <string name="note">မှတ်စု စာရင်း</string>
     <string name="lawNametitle">ကလေးသူငယ် အခွင့်အရေးများဆိုင်ရာ ဥပဒေ</string>
+    <string name="title_activity_tsp_court_maps">Map</string>
 </resources>
