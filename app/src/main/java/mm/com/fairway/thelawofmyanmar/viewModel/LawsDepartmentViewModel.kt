@@ -10,6 +10,7 @@ import mm.com.fairway.thelawofmyanmar.ui.lawyer.LawyersListModel
 import mm.com.fairway.thelawofmyanmar.ui.region.RegionsListModel
 import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.Court
 import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.CourtListModel
+import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.DetaiCourtModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,7 +20,7 @@ class LawsDepartmentViewModel:ViewModel() {
     private var lawDepartment:MutableLiveData<DepartmentListModel> = MutableLiveData()
     private var lawyers:MutableLiveData<LawyersListModel> = MutableLiveData()
     private var courts: MutableLiveData<CourtListModel> = MutableLiveData()
-    private  var courtdetail:MutableLiveData<Court> = MutableLiveData()
+    private  var courtdetail:MutableLiveData<DetaiCourtModel> = MutableLiveData()
     private  var region:MutableLiveData<RegionsListModel> = MutableLiveData()
     fun getRegion():LiveData<RegionsListModel> = region
     fun setRegionList(){
@@ -40,18 +41,19 @@ class LawsDepartmentViewModel:ViewModel() {
     }
     fun setDetailCourt(courtID: Int){
         var detaiCourtApiCall= apiClient.getDetailCourt(courtID)
-        detaiCourtApiCall.enqueue(object : Callback<Court>{
-            override fun onResponse(call: Call<Court>, response: Response<Court>) {
+        detaiCourtApiCall.enqueue(object : Callback<DetaiCourtModel>{
+            override fun onResponse(call: Call<DetaiCourtModel>, response: Response<DetaiCourtModel>) {
                 courtdetail.value=response.body()
+                Log.d("DetailCourt>>>",response.toString())
             }
 
-            override fun onFailure(call: Call<Court>, t: Throwable) {
+            override fun onFailure(call: Call<DetaiCourtModel>, t: Throwable) {
                 Log.d("DeCourt>>>>",t.toString())
             }
 
         })
     }
-    fun getDetailCourt():LiveData<Court> = courtdetail
+    fun getDetailCourt():LiveData<DetaiCourtModel> = courtdetail
     fun setLoadCourts(){
         var courtApiCall=apiClient.getTspCourt()
         courtApiCall.enqueue(object : Callback<CourtListModel>{

@@ -5,6 +5,7 @@ import mm.com.fairway.thelawofmyanmar.ui.lawyer.LawyersListModel
 import mm.com.fairway.thelawofmyanmar.ui.region.RegionsListModel
 import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.Court
 import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.CourtListModel
+import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.DetaiCourtModel
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -32,7 +33,7 @@ var apiInterface:LawApiInterface
     fun getTspCourt(): Call<CourtListModel>{
         return  apiInterface.getTspCourtsList()
     }
-    fun getDetailCourt( courtId : Int): Call<Court>{
+    fun getDetailCourt( courtId : Int): Call<DetaiCourtModel>{
         return apiInterface.getCourt(courtId)
     }
     fun getRegionsList():Call<RegionsListModel>{

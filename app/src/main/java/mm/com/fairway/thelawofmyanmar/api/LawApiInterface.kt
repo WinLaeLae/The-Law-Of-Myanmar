@@ -5,6 +5,7 @@ import mm.com.fairway.thelawofmyanmar.ui.lawyer.LawyersListModel
 import mm.com.fairway.thelawofmyanmar.ui.region.RegionsListModel
 import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.Court
 import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.CourtListModel
+import mm.com.fairway.thelawofmyanmar.ui.townshipCourt.DetaiCourtModel
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -22,7 +23,7 @@ interface LawApiInterface {
     @GET("court/{id}")
     fun getCourt(
         @Path("id") court_id: Int
-    ): Call<Court>
+    ): Call<DetaiCourtModel>
 
     @GET("region")
     fun getRegion(): Call<RegionsListModel>
